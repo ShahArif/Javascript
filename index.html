@@ -12,17 +12,26 @@
 
 <body>
     <div id="demo">
-        <button onclick="turnOn()">Turn ON</button>
-            <img id="bulb" src="./images/bulb-off.gif">
-         <button onclick="turnOff()">Turn OFF</button>
+       <p id="text" style="font-size: 14px;">Hello World.How are you doing!</p>
+       <button onclick="increaseFontSize()">Increase Font Size</button>
+       <button onclick="decreaseFontSize()">Decrease Font Size</button>
+       
     </div>
+    <button onclick="hideDiv()">Hide Div</button>
+    <button onclick="showDiv()">Show Div</button>
 </body>
 <script>
-    function turnOn(){
-       document.getElementById('bulb').src = ' ./images/bulb-on.gif';
+    function increaseFontSize(){
+        document.getElementById('text').style.fontSize = '50px';       
     }
-    function turnOff(){
-       document.getElementById('bulb').src = ' ./images/bulb-off.gif';
+    function decreaseFontSize(){
+        document.getElementById('text').style.fontSize = '24px';
+    }
+    function hideDiv(){
+         document.getElementById('demo').style.display = 'none';
+    }
+    function showDiv(){
+        document.getElementById('demo').style.display = 'block';
     }
 </script>
 
