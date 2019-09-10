@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,22 +9,23 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
+
 <body>
     <div id="demo">
-        Welcome Dude
+        <button onclick="turnOn()">Turn ON</button>
+         <div id="bulb">
+                <img src="./images/bulb-off.gif">
+         </div> 
+         <button onclick="turnOff()">Turn OFF</button>
     </div>
 </body>
-    <script>
-    // Task 1: Simply inserting text inside the div by its id 
-       document.getElementById('demo').innerHTML = 'Hello World';
+<script>
+    function turnOn(){
+       document.getElementById('bulb').innerHTML = ' <img src="./images/bulb-on.gif">';
+    }
+    function turnOff(){
+       document.getElementById('bulb').innerHTML = ' <img src="./images/bulb-off.gif">';
+    }
+</script>
 
-    // Task 2:  Fetching text from the div by its id   
-       var content = document.getElementById('demo').innerText;
-       alert(content);
-
-     // Task 2:  Creating heading element and then inserting inside a div
-     var heading = '<h1>Hello</h1>';
-     document.getElementById('demo').innerHTML = heading;
-
-    </script>
 </html>
