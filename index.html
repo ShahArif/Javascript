@@ -9,9 +9,21 @@
     <script src='main.js'></script>
 </head>
 <body>
-    
+    <div id="demo">
+        Welcome Dude
+    </div>
 </body>
     <script>
-        alert('Hello Dude')    
+    // Task 1: Simply inserting text inside the div by its id 
+       document.getElementById('demo').innerHTML = 'Hello World';
+
+    // Task 2:  Fetching text from the div by its id   
+       var content = document.getElementById('demo').innerText;
+       alert(content);
+
+     // Task 2:  Creating heading element and then inserting inside a div
+     var heading = '<h1>Hello</h1>';
+     document.getElementById('demo').innerHTML = heading;
+
     </script>
 </html>
