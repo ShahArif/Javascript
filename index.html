@@ -13,18 +13,16 @@
 <body>
     <div id="demo">
         <button onclick="turnOn()">Turn ON</button>
-         <div id="bulb">
-                <img src="./images/bulb-off.gif">
-         </div> 
+            <img id="bulb" src="./images/bulb-off.gif">
          <button onclick="turnOff()">Turn OFF</button>
     </div>
 </body>
 <script>
     function turnOn(){
-       document.getElementById('bulb').innerHTML = ' <img src="./images/bulb-on.gif">';
+       document.getElementById('bulb').src = ' ./images/bulb-on.gif';
     }
     function turnOff(){
-       document.getElementById('bulb').innerHTML = ' <img src="./images/bulb-off.gif">';
+       document.getElementById('bulb').src = ' ./images/bulb-off.gif';
     }
 </script>
 
